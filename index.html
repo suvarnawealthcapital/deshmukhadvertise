@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Admission Open - Shivajirao Deshmukh Krushi Tantra College</title>
+    <!-- Modern Professional Marathi Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Yantramanav:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Linking to parent stylesheet for variables -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <style>
+        /* Specific Styles for the Advertise Landing Page */
+        body {
+            background-color: var(--cream, #f5f0e8);
+            font-family: 'Mukta', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .ad-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            margin: 20px auto;
+            border: 2px solid var(--primary-green, #2d5016);
+        }
+
+        /* Top Header Section with curved bottom */
+        .ad-header {
+            background: linear-gradient(135deg, var(--primary-green, #2d5016) 0%, var(--secondary-green, #4a7c2a) 100%);
+            color: #ffffff;
+            padding: 30px 20px 50px;
+            text-align: center;
+            position: relative;
+            border-bottom-left-radius: 50% 15%;
+            border-bottom-right-radius: 50% 15%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mandal-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+        }
+
+        .college-title {
+            font-size: 1.8rem;
+            font-family: 'Yantramanav', sans-serif;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .college-address {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Main Content Section */
+        .ad-content {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .admission-alert {
+            color: #c0392b;
+            font-family: 'Yantramanav', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            animation: pulse-text 2s infinite;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes pulse-text {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .eligibility {
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .course-name {
+            background-color: var(--primary-green, #2d5016);
+            font-family: 'Yantramanav', sans-serif;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            box-shadow: 0 4px 10px rgba(45, 80, 22, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .duration {
+            font-size: 1.4rem;
+            color: var(--secondary-green, #4a7c2a);
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        /* Feature Boxes */
+        .info-box {
+            border: 2px solid var(--accent-green, #6b9f3d);
+            border-radius: 15px;
+            padding: 25px 15px 15px;
+            position: relative;
+            margin-bottom: 30px;
+            background-color: #fcfcfc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .info-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-box-title {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            border: 2px solid var(--accent-green, #6b9f3d);
+            padding: 4px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            color: var(--primary-green, #2d5016);
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+
+        .info-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: left;
+        }
+
+        /* Specific for mobile to stack if needed */
+        @media (max-width: 480px) {
+            .info-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-list li {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #333;
+            padding: 5px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Custom bullet points */
+        .info-list li::before {
+            content: '✔';
+            color: var(--accent-green, #6b9f3d);
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+
+        /* Call to Action */
+        .cta-banner {
+            display: inline-block;
+            background-color: #e74c3c;
+            font-family: 'Yantramanav', sans-serif;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.6rem;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4);
+            border-radius: 50px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            animation: pulse-button 2s infinite;
+        }
+
+        .cta-banner:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.6);
+            background-color: #c0392b;
+            text-decoration: none;
+        }
+
+        @keyframes pulse-button {
+            0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+        }
+
+        /* Footer Contacts */
+        .contact-footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .contact-person {
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-person a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        .contact-person a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            .ad-header {
+                padding: 20px 15px 40px;
+            }
+            .college-title {
+                font-size: 1.4rem;
+            }
+            .admission-alert {
+                font-size: 1.3rem;
+            }
+            .course-name {
+                font-size: 1.2rem;
+            }
+            .cta-banner {
+                font-size: 1.2rem;
+                padding: 15px 20px;
+                width: 90%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ad-container">
+        <!-- Header Section -->
+        <header class="ad-header">
+            <img src="https://res.cloudinary.com/dxg2fcony/image/upload/f_auto,q_90,w_480,c_fill,dpr_auto/v1763629780/college/images/college/images/deshmukh.jpg" alt="Shri Shivajirao Deshmukh" class="profile-img">
+            <div class="mandal-name">निनाईदेवी शिक्षण प्रसारक मंडळ, कोकरुड</div>
+            <h1 class="college-title">श्री. शिवाजीराव देशमुख कृषीतंत्र विद्यालय</h1>
+            <div class="college-address">करुंगली आरळा, ता. शिराळा</div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="ad-content">
+            <div class="admission-alert">प्रवेश सुरू...! प्रवेश सुरू...! प्रवेश सुरू...!</div>
+            
+            <div class="eligibility">इयत्ता १० वी / १२ वी नंतर</div>
+            <div class="course-name">कृषी पदविका अभ्यासक्रम</div>
+            <div class="duration">कालावधी २ वर्षे</div>
+
+            <!-- Benefits Box -->
+            <div class="info-box">
+                <div class="info-box-title">पदविकेचे फायदे</div>
+                <ul class="info-list">
+                    <li>१) कृषी सहाय्यक / ग्रामसेवक</li>
+                    <li>२) वनपाल / वनरक्षक</li>
+                    <li>३) स्वतःचा खते, बी-बियाणे विक्री व्यवसाय</li>
+                    <li>४) ॲग्रीकल्चर मार्केटिंग मध्ये करीअर</li>
+                </ul>
+            </div>
+
+            <!-- Features Box -->
+            <div class="info-box">
+                <div class="info-box-title">आमची वैशिष्ट्ये</div>
+                <ul class="info-list">
+                    <li>१) सुसज्ज इमारत</li>
+                    <li>२) तज्ञ शिक्षक वृंद</li>
+                    <li>३) वसतीगृहाची सुविधा</li>
+                    <li>४) निसर्गरम्य वातावरण</li>
+                </ul>
+            </div>
+
+            <!-- Call to action -->
+            <a href="https://shivajiraodeshmukhagri.org/" target="_blank" class="cta-banner">
+                आजच आपला प्रवेश निश्चित करा ➜
+            </a>
+        </div>
+
+        <!-- Contact Footer -->
+        <footer class="contact-footer">
+            <div class="contact-person">
+                सुतार मॅडम मो. <a href="tel:7709032483">7709032483</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
